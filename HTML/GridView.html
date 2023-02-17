@@ -1,0 +1,171 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <head>
+            <title>Grid View HTML</title>
+        </head>
+        <style>
+            div.container
+            {
+                position: absolute;
+                top: 0vh;
+            }
+            div.box
+            {
+                padding: 10px;
+                width: 250px;
+                height: 400px;
+                border: solid black;
+                text-align: center;
+                background-color: rgb(214, 217, 52);
+                color: rgb(164, 20, 20);
+            }
+            button 
+            {
+                width: 80%;
+                height: 40px;
+                background-color: rgb(213, 250, 244);
+                color: rgb(10, 9, 9);
+            }
+            h1 
+            {
+                text-transform: uppercase;
+            }
+            #btn1
+            {
+                position: relative;
+                top: 152px;
+            }
+            #btn2
+            {
+                position: relative;
+                top: 205px;
+            }
+            #btn3
+            {
+                position: relative;
+                top: 152px;
+            }
+            #btn4 
+            {
+                position: relative;
+                top: 223px;
+            }
+            #btn5
+            {
+                position: relative;
+                top: 132px;
+            }
+            #btn6
+            {
+                position: relative;
+                top: 205px;
+            }
+            #btn7
+            {
+                position: relative;
+                top: 187px;
+            }
+
+            @media screen and (max-width: 390px)
+            {
+                div.box
+                {
+                    padding: 10px;
+                    width: 100vw;
+                    height: 400px;
+                    border: solid black;
+                    text-align: center;
+                    background-color: rgb(42, 165, 75);
+                    color: rgb(66, 5, 5);
+                }
+            }
+            @media screen and (min-width:400px)
+            {
+                div.container
+                {
+                    display: grid;
+                    grid-template-columns: auto;
+                }    
+            }
+
+            @media screen and (min-width:600px) 
+            {
+                div.container
+                {
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    gap: 10px;
+                }
+            }
+            
+            @media screen and (min-width:890px) 
+            {
+                div.container
+                {
+                    display: grid;
+                    grid-template-columns: auto auto auto;
+                    gap: 20px;
+                }
+            }
+            
+            @media screen and (min-width:1200px)
+            {
+                div.container
+                {
+                    display: grid;
+                    grid-template-columns: auto auto auto auto;
+                    gap: 30px;
+                }
+            }          
+        </style>
+    </head>
+    <body>
+        
+    <div class="container">
+       
+        <div class="box">
+            <h1>Harvesting</h1>
+            <p>Harvesting is the operation of gathering the useful part or parts of the plant and is carried out at the time when all the nutrients have developed and the edible parts have reached the appropriate degree of maturity.</p>
+            <button id="btn1"><strong>Click Here</strong></button>
+        </div>
+        
+        <div class="box">
+            <h1>Processing</h1>
+            <p>Food Processing is the process of transforming food items into a form that can be used.</p>
+            <button id="btn2"><strong>Click Here</strong></button>
+        </div>
+        
+        <div class="box">
+            <h1>Roasting</h1>
+            <p>Roasting is a cooking method that uses dry heat where hot air covers the food, cooking it evenly on all sides with temperatures of at least 150 °C (300 °F) from an open flame, oven, or other heat source.</p>
+            <button id="btn3"><strong>Click Here</strong></button>
+        </div>
+        
+        <div class="box">
+            <h1>Grinding</h1>
+            <p>The process of breaking solid food items into smaller particles.</p>
+            <button id="btn4"><strong>Click Here</strong></button>
+        </div>
+        
+        <div class="box">
+            <h1>Packaging</h1>
+            <p>Food packaging is a packaging system specifically designed for food and represents one of the most important aspects among the processes involved in the food industry, as it provides protection from chemical, biological and physical alterations.</p>
+            <button id="btn5"><strong>Click Here</strong></button>
+        </div>
+        
+        <div class="box">
+            <h1>Brewing</h1>
+            <p>To make or prepare (a beverage, as tea) by mixing, steeping, soaking, or boiling a solid in water.</p>
+            <button id="btn6"><strong>Click Here</strong></button>
+        </div>
+        
+        <div class="box">
+            <h1>The perfect cup!</h1>
+            <p>A perfect cup of coffee is one brewed for the moment.</p>
+            <button id="btn7"><strong>Click Here</strong></button>
+        </div>
+    </div>
+  
+    </body>
+</html>
