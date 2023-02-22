@@ -1,0 +1,39 @@
+<html>
+	<script>
+		
+		function checkClock(advanceMinutes,h)
+		{
+			let hour = 0; 
+			let minutes = 0;
+			
+			for(let i=1;i<24;i++)
+			{
+				hour++;
+				minutes += advanceMinutes;
+				if(minutes >= 60)
+				{
+					hour++;
+					minutes -= 60;
+				}
+				if(hour >= h)
+				{
+					console.log(i);
+					return i;
+				}
+				if(hour >= 24)
+				{
+					hour -= 24;
+				}
+	
+			}
+		}
+		
+		let advanceMinutes = 10;
+        let currentHour = 7;
+		let expected = 6;
+		
+		console.log(checkClock(advanceMinutes,currentHour) === expected ? "TestCase Passed" : "TestCase Failed");
+		
+		
+	</script>
+</html>

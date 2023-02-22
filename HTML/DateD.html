@@ -1,0 +1,15 @@
+<html>
+	<script>
+		function dateDiff(d1,d2)
+		{
+			return ((d2-d1)/(1000 * 60 * 60 * 24));
+		}
+		
+		let date1 = new Date("08/14/2020");   
+		let date2 = new Date("09/16/2020"); 
+		let expected = 33;
+		
+		console.log(dateDiff(date1,date2) == expected ? "TestCase Passed" : "TestCase Failed");
+
+	</script>
+</html>
