@@ -1,0 +1,25 @@
+<html>
+<script>
+	function perfectnum(n)
+	{
+		sum=1;
+		for(let i=2;i<=n/2;i++)
+		{
+			if(n%i===0)
+			{
+				sum += i
+			}
+		}
+		return sum===n ? "P":"NP";
+	}
+	
+	let input =[2,6,80,28,35];
+	let expected=["NP","P","NP","P","NP"];
+	let i=0;
+	
+	input.forEach(function(value){
+		console.log(perfectnum(value)===expected[i++] ? "TestCase Passed" : "TestCase Failed");
+	});
+
+</script>
+</html>
