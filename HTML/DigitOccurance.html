@@ -1,0 +1,31 @@
+<html>
+	<script>
+		function digitCount(no)
+		{
+			let digitArray={};
+			
+			while(no>0)
+			{
+				rem = no % 10;
+				no = Math.trunc( no / 10 );
+				
+				if(digitArray[rem] === undefined )
+				{
+					digitArray[rem] = 1;
+				}
+				else
+				{
+					digitArray[rem]++;
+				}
+			}
+			console.log(digitArray);
+			return digitArray;
+		}
+		
+		let input = "1234494463573439";
+		let expected={1: 1, 2: 1, 3: 4, 4: 5, 5: 1, 6: 1, 7: 1, 9: 2};
+		
+		console.log(JSON.stringify(digitCount(input)) === JSON.stringify(expected) ? "TestCase successful" : "TestCase Failed");		
+		
+	</script>
+</html>
