@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <script>
+            function shuffle(){
+               var box1Color = document.getElementById("box1").style.backgroundColor;
+               var box2Color = document.getElementById("box2").style.backgroundColor;
+               var box3Color = document.getElementById("box3").style.backgroundColor;
+               var box4Color = document.getElementById("box4").style.backgroundColor;
+               var box5Color = document.getElementById("box5").style.backgroundColor;
+            //    var box6Color = document.getElementById("box6").style.backgroundColor;
+            //    var box7Color = document.getElementById("box7").style.backgroundColor;
+            //    var box8Color = document.getElementById("box8").style.backgroundColor;
+               
+               if( box1Color == "red" && box2Color == "blue")
+               {
+                    document.getElementById("box2").style.backgroundColor = "red";
+                    document.getElementById("box4").style.backgroundColor = "red";
+                    document.getElementById("box3").style.backgroundColor = "blue";
+                    document.getElementById("box5").style.backgroundColor = "blue";
+                    document.getElementById("box7").style.backgroundColor = "blue";
+                    document.getElementById("box6").style.backgroundColor = "green";
+                    document.getElementById("box8").style.backgroundColor = "green";
+                    document.getElementById("box9").style.backgroundColor = "red";
+                    document.getElementById("box1").style.backgroundColor = "green";
+                }
+                else if ( box1Color == "green" && box5Color == "blue")
+                {
+                    document.getElementById("box2").style.backgroundColor = "red";
+                    document.getElementById("box4").style.backgroundColor = "red";
+                    document.getElementById("box3").style.backgroundColor = "green";
+                    document.getElementById("box5").style.backgroundColor = "green";
+                    document.getElementById("box7").style.backgroundColor = "green";
+                    document.getElementById("box6").style.backgroundColor = "blue";
+                    document.getElementById("box8").style.backgroundColor = "blue";
+                    document.getElementById("box9").style.backgroundColor = "red";
+                    document.getElementById("box1").style.backgroundColor = "blue";
+                }
+                else if ( box1Color == "blue" && box4Color == "red")
+                {
+                    document.getElementById("box2").style.backgroundColor = "green";
+                    document.getElementById("box4").style.backgroundColor = "green";
+                    document.getElementById("box3").style.backgroundColor = "red";
+                    document.getElementById("box5").style.backgroundColor = "red";
+                    document.getElementById("box7").style.backgroundColor = "red";
+                    document.getElementById("box6").style.backgroundColor = "blue";
+                    document.getElementById("box8").style.backgroundColor = "blue";
+                    document.getElementById("box9").style.backgroundColor = "green";
+                    document.getElementById("box1").style.backgroundColor = "blue";
+                }
+                else if ( box2Color == "green" && box3Color == "red")
+                {
+                    document.getElementById("box2").style.backgroundColor = "green";
+                    document.getElementById("box4").style.backgroundColor = "blue";
+                    document.getElementById("box3").style.backgroundColor = "blue";
+                    document.getElementById("box5").style.backgroundColor = "red";
+                    document.getElementById("box7").style.backgroundColor = "green";
+                    document.getElementById("box6").style.backgroundColor = "green";
+                    document.getElementById("box8").style.backgroundColor = "blue";
+                    document.getElementById("box9").style.backgroundColor = "red";
+                    document.getElementById("box1").style.backgroundColor = "red";
+                }
+                else if ( box2Color == "green" && box3Color == "blue")
+                {
+                    document.getElementById("box2").style.backgroundColor = "red";
+                    document.getElementById("box4").style.backgroundColor = "blue";
+                    document.getElementById("box3").style.backgroundColor = "blue";
+                    document.getElementById("box5").style.backgroundColor = "green";
+                    document.getElementById("box7").style.backgroundColor = "red";
+                    document.getElementById("box6").style.backgroundColor = "red";
+                    document.getElementById("box8").style.backgroundColor = "blue";
+                    document.getElementById("box9").style.backgroundColor = "green";
+                    document.getElementById("box1").style.backgroundColor = "green";
+                }
+                else if ( box2Color == "red" && box3Color == "blue")
+                {
+                    document.getElementById("box2").style.backgroundColor = "red";
+                    document.getElementById("box4").style.backgroundColor = "green";
+                    document.getElementById("box3").style.backgroundColor = "green";
+                    document.getElementById("box5").style.backgroundColor = "blue";
+                    document.getElementById("box7").style.backgroundColor = "red";
+                    document.getElementById("box6").style.backgroundColor = "red";
+                    document.getElementById("box8").style.backgroundColor = "green";
+                    document.getElementById("box9").style.backgroundColor = "blue";
+                    document.getElementById("box1").style.backgroundColor = "blue";
+                }
+                else if ( box2Color == "red" && box3Color == "green")
+                {
+                    document.getElementById("box2").style.backgroundColor = "blue";
+                    document.getElementById("box4").style.backgroundColor = "green";
+                    document.getElementById("box3").style.backgroundColor = "green";
+                    document.getElementById("box5").style.backgroundColor = "red";
+                    document.getElementById("box7").style.backgroundColor = "blue";
+                    document.getElementById("box6").style.backgroundColor = "blue";
+                    document.getElementById("box8").style.backgroundColor = "green";
+                    document.getElementById("box9").style.backgroundColor = "red";
+                    document.getElementById("box1").style.backgroundColor = "red";
+                }
+            }
+        </script>
+        <link href="./Matrix Shuffle.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container">
+            <div>
+                <div id="box1" style="background-color: red;">1</div>
+                <div id="box2" style="background-color: blue;">2</div>
+                <div id="box3" style="background-color: green;">3</div>
+            </div>
+            <div>
+                <div id="box4" style="background-color: blue;">4</div>
+                <div id="box5" style="background-color: green;">5</div>
+                <div id="box6" style="background-color: red;">6</div>
+            </div>
+            <div>
+                <div id="box7" style="background-color: green;">7</div>
+                <div id="box8" style="background-color: red;">8</div>
+                <div id="box9" style="background-color: blue;">9</div>
+            </div>   
+        </div>
+
+        <button onclick="shuffle()">Shuffle</button>
+    </body>
+</html>

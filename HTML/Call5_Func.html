@@ -1,0 +1,33 @@
+
+
+<html>
+    <body>
+        <script>
+
+            function f1() 
+            { 
+                alert("function 1 is called");
+            }
+            function f2()
+            {
+                alert("function 2 is called");
+            }
+            function f3() 
+            {
+                alert("function 3 is called");
+            }
+            var f4 = () => 
+            {
+                alert("function 4 is called");
+            }
+            var f5 = function () 
+            {
+                alert("function 5 is called");
+            }
+            
+            let a = prompt("Enter Function Name =");
+            window[a]()
+        
+        </script>
+    </body>
+</html>
