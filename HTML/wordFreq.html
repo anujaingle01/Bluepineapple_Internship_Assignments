@@ -1,0 +1,27 @@
+<html>
+	<script>
+		function wordCount(str)
+		{
+			let splitedStr = str.toLowerCase().split(" ");
+			let wordscnt={};
+			
+			splitedStr.forEach(function(value){
+				if(wordscnt[value] === undefined)
+				{
+					wordscnt[value] = 1;
+				}
+				else
+				{
+					wordscnt[value]++;
+				}
+			});
+			return wordscnt;
+		}
+		
+		let input = "Hello this is first line of mahabharat book Mahabharat is a good india ancient book This is third line end";
+		let expected={"hello":1,"this":2,"is":3,"first":1,"line":2,"of":1,"mahabharat":2,"book":2,"a":1,"good":1,"india":1,"ancient":1,"third":1,"end":1};
+		
+		console.log(JSON.stringify(wordCount(input)) === JSON.stringify(expected) ? "TestCase successful" : "TestCase Failed");		
+		
+	</script>
+</html>
